@@ -1,19 +1,10 @@
-#include <RotaryEncoder.h>
-#include <Keyboard.h>
-#include <Bounce2.h>
+#include "requirements.h"
 
 #define BUTTON_PIN 14
-#define PLAYER1_PIN1 10
-#define PLAYER1_PIN2 16
-
-// #define PLAYER2_PIN1 2
-// #define PLAYER2_PIN2 3
-
-RotaryEncoder player1_rotor(PLAYER1_PIN1, PLAYER1_PIN2, RotaryEncoder::LatchMode::TWO03);
 
 Bounce2::Button pause_button;
 
-unsigned long tp;
+player p1(PLAYER1_CLK, PLAYER1_DT, KEY_UP_ARROW, KEY_DOWN_ARROW);
 
 void setup() {
     // put your setup code here, to run once:
@@ -25,8 +16,6 @@ void setup() {
     pause_button.setPressedState(LOW);
 
     Keyboard.begin();
-
-    tp = millis();
 }
 
 void loop() {
@@ -34,7 +23,9 @@ void loop() {
 
     pause_button.update();
 
-    player1_rotor.tick();
+    p1.update();
+
+    /*player1_rotor.tick();
 
     if(pause_button.pressed())
     {
@@ -70,5 +61,5 @@ void loop() {
     if(millis() - tp > 100)
     {
         Keyboard.releaseAll();
-    }
+    }*/
 }
