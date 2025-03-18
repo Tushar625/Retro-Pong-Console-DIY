@@ -1,5 +1,11 @@
+/*
+    this class provides a simple interface to associate the dt and clk pins
+    of a rotary encoder to keyboard keys corresponding to the up and down
+    movement of the paddle.
 
-// this file provides an object for easy handling of rotary encoder
+    when the rotary encoder knobe is rotated, the key presses are simulated
+    and the paddle gets moved
+*/
 
 class player
 {
@@ -12,6 +18,12 @@ class player
     bool key_pressed;
 
     public:
+
+    /*
+      the constructor takes the no. of the pins the clk and dt are attached to and
+      the key_codes of the keys corresponding to the up and down movement of the
+      paddle.
+    */
 
     player(int clk, int dt, uint8_t up, uint8_t down)
     : rotor(clk, dt, RotaryEncoder::LatchMode::TWO03),
@@ -59,6 +71,8 @@ class player
 
             key_pressed = true;
         }
+
+        // release the key after "time" is over
 
         if(key_pressed && millis() - tp > BUTTON_PRESS_DURATION)
         {
