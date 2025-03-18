@@ -4,4 +4,14 @@
 #define PLAYER1_UP KEY_UP_ARROW
 #define PLAYER1_DOWN KEY_DOWN_ARROW
 
-#define BUTTON_PRESS_DURATION 200
+#define PLAYER2_DT 14
+#define PLAYER2_CLK 15
+
+#define PLAYER2_UP 'S'
+#define PLAYER2_DOWN 'X'
+
+#define RESTART_PIN 9
+#define PAUSE_PIN 8
+#define ESC_PIN 7
+
+#define BUTTON_PRESS_DURATION 200 //ms
