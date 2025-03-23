@@ -8,9 +8,9 @@ player p2(PLAYER2_CLK, PLAYER2_DT, PLAYER2_UP, PLAYER2_DOWN);
 
 // key board buttons to emulate
 
-key_button restart('R', RESTART_PIN);
+key_button restart('r', RESTART_PIN);
 
-key_button pause('P', PAUSE_PIN);
+key_button pause('p', PAUSE_PIN);
 
 key_button escape(KEY_ESC, ESC_PIN);
 

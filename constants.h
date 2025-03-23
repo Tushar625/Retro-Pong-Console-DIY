@@ -18,8 +18,8 @@
 #define PLAYER2_DT 14
 #define PLAYER2_CLK 15
 
-#define PLAYER2_UP 'S'
-#define PLAYER2_DOWN 'X'
+#define PLAYER2_UP 's'
+#define PLAYER2_DOWN 'x'
 
 #define RESTART_PIN 9
 #define PAUSE_PIN 8
