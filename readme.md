@@ -1,6 +1,6 @@
 # 🕹️ Retro Pong Console
 
-![Pong Console](https://github.com/user-attachments/assets/15932071-1e59-4a00-9be6-177e2c022690)
+![Pong Console](https://github.com/user-attachments/assets/68db89c4-a410-4f1f-b71d-c81dd5ba9109)
 
 This is a DIY hardware controller for playing a browser-based [Pong](https://freepong.org/) game—built to recreate the feel of the original 1972 arcade experience. It uses an Arduino Pro Micro, rotary encoders for paddles, and a few buttons for gameplay control.
 
