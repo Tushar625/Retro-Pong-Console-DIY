@@ -28,6 +28,9 @@
 /*
     the keys needed to be pressed down for several milliseconds to
     simulate key press
+
+    increase or decrease this duration to increase or decrease sensivity
+    of the knobs
 */
 
 #define BUTTON_PRESS_DURATION 200 //ms
