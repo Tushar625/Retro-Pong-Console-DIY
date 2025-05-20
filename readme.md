@@ -1,6 +1,6 @@
 # 🕹️ Retro Pong Console
 
-![Pong Console](<insert-image-url-here>)
+![Pong Console](https://github.com/user-attachments/assets/15932071-1e59-4a00-9be6-177e2c022690)
 
 This is a DIY hardware controller for playing a browser-based [Pong](https://freepong.org/) game—built to recreate the feel of the original 1972 arcade experience. It uses an Arduino Pro Micro, rotary encoders for paddles, and a few buttons for gameplay control.
 
@@ -18,7 +18,7 @@ The Arduino Pro Micro is used for its native USB HID capabilities. When you turn
 - **Rotary Encoders** → Paddle movement (mapped to keypresses).
 - **Buttons** → Quit (`Esc`), Pause (`P`), Restart (`R`).
 
-Just plug it in, open the Pong game in your browser, and you're ready to play.
+Just plug it in, open the [Pong clone](https://freepong.org/) in your browser, and you're ready to play.
 
 ## 🧩 Libraries Used
 
